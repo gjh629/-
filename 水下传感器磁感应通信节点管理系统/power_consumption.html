@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>电量消耗</title>
+		<link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	<script type="text/javascript" src="jquery-3.5.1/jquery-3.5.1.min.js"></script>
+	
+	</head>
+	<body>
+		   <div class="col-md-10 col-lg-offset-1">
+		        <nav class="navbar navbar-inverse">
+		            <div class="container-fluid
+					">
+		              <div class="navbar-header">
+		                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		                  <span class="sr-only">Toggle navigation</span>
+		                  <span class="icon-bar"></span>
+		                  <span class="icon-bar"></span>
+		                  <span class="icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="#">水下传感器磁感应通信节点管理系统</a>
+		              </div>
+		          
+		              <!-- Collect the nav links, forms, and other content for toggling -->
+		              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		                <div class="col-lg-offset-5"><ul class="nav navbar-nav">
+		                  <li class="active" ><a href="statement.html">性能统计<span class="sr-only">(current)</span></a></li>
+		                  <li class="active"><a href="dataSimulate.html">节点仿真<span class="sr-only">(current)</span></a></li>
+		                  <li class="active"><a href="statusAnalyse.html">状态分析<span class="sr-only">(current)</span></a></li>
+						  <li class="active"><a href="power_consumption.html">电量消耗<span class="sr-only">(current)</span></a></li>
+						  
+		                </ul>
+		               </div>
+		                <div style="float: right; margin-top: 8px;">
+							<button class="btn btn-primary">关于我们</button>
+							<button class="btn btn-danger">退出</button>
+						</div>
+						
+						
+						
+						
+		              </div><!-- /.navbar-collapse -->
+		            </div><!-- /.container-fluid -->
+		          </nav>
+		          
+		    </div>
+		
+		
+			<div class="col-md-6 col-md-offset-3">
+			    <table class="table table-bordered">
+			        <tr class="success">
+			            <th>位置</th>
+			            <th>电量</th>
+			            <th>ID</th>
+			            <th>状态</th>
+			            <th>坐标</th>
+						<th><center>操作</center></th>
+			        </tr>
+			        <c:forEach items="${ }" var=" " varStatus=" ">
+					    <tr>
+							<td>${}</td>
+							<td>${}</td>
+							<td>${}</td>
+							<td>${}</td>
+							<td>${}</td>
+							<td>
+								<center>
+								<a class="btn btn-primary btn-sm" href="${pageContext.request.contextPath}">修改</a>
+								<a class="btn btn-primary btn-sm" href="${pageContext.request.contextPath}">删除</a>
+								</center>
+							</td>
+						</tr>
+					</c:forEach>
+			      </table>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	</body>
+</html>
+
+
+
+
+
+
+
